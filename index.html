@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>11th Admission Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Left side animations -->
+<div class="side-animation left small"></div>
+<div class="side-animation left medium"></div>
+<div class="side-animation left large"></div>
+
+<!-- Right side animations -->
+<div class="side-animation right small"></div>
+<div class="side-animation right medium"></div>
+<div class="side-animation right large"></div>
+
+
+  <div class="form-container">
+    <h1>11<sup>th</sup> Admission Application Form</h1>
+    <form id="admissionForm">
+      <div class="input-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+
+      <div class="input-group">
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+          <option value="">-- Select Gender --</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required />
+      </div>
+
+      <div class="input-group">
+        <label for="email">Email ID</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="input-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required />
+      </div>
+
+      <div class="input-group">
+        <label>Address</label>
+        <textarea name="address" required></textarea>
+      </div>
+      <br>
+      <hr class="styled-line">
+
+
+      <h2><b>Subjects Selection</b></h2>
+      <div class="input-group">
+        <div class="compulsory-subjects">
+            <label>Compulsory Subjects:</label>
+            <ul>
+              <li>English</li>
+              <li>Mathematics</li>
+              <li>Science</li>
+            </ul>
+          </div>
+            <br>          
+
+      <div class="input-group">
+        <label>Select any <strong>1</strong> subject:</label>
+        <select name="elective1" required>
+            <option value="">-- Select --</option>
+            <option>Computer Science</option>
+            <option>Biology</option>
+            <option>Economics</option>
+          </select>
+          
+      </div>
+
+      <div class="input-group">
+        <label>Select any <strong>2</strong> from the following:</label>
+        <div class="elective-selection">
+            <label>Select any <strong>2</strong> from the following:</label>
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="elective2" value="History" /> History</label>
+              <label><input type="checkbox" name="elective2" value="Geography" /> Geography</label>
+              <label><input type="checkbox" name="elective2" value="Psychology" /> Psychology</label>
+              <label><input type="checkbox" name="elective2" value="Sociology" /> Sociology</label>
+              <label><input type="checkbox" name="elective2" value="Political Science" /> Political Science</label>
+            </div>
+          </div>
+        <br><br>          
+
+      <div class="input-group">
+        <button type="submit" class="submit-btn"><a href="page2.html">Submit Application</button></a>
+      </div>
+    </form>    
+      
+  
+  <!-- ✅ Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2025 All rights reserved.</p><br>
+    <p><b>Powered By Mandar Kajbaje</b></p>
+  </footer>
+  
+  <!-- ✅ Script to Toggle Visibility -->
+  <script>
+    const form = document.getElementById('admissionForm');
+    const thankYou = document.getElementById('thankYou');
+  
+    form.addEventListener('submit', function (e) {
+      e.preventDefault(); // Prevent form from submitting
+      form.style.display = 'none'; // Hide the form
+      thankYou.style.display = 'block'; // Show thank-you message
+    });
+  </script>
+      
+  
+</body>
+</html>
