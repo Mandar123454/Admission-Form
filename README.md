@@ -36,10 +36,10 @@ style.min.css# Minified CSS for production (optional)
 - Elective 2: select exactly two checkboxes; UI prevents more than two
 
 ## Deployment: GitHub Pages
-1. Push to `main` branch.
-2. GitHub → Repository → Settings → Pages:
-   - Source: `main` / root (`/`)
-3. Wait for publish; open the Pages URL.
+1. Push to `main` branch (already contains `.nojekyll` and `404.html`).
+2. In GitHub: Repository → Settings → Pages → Source: `Deploy from a branch`, Branch: `main`, Folder: `/ (root)`.
+3. Wait for publish; open the Pages URL from the banner.
+4. If caching seems stale, hard-refresh your browser or append `?v=1` to the URL.
 
 ## Development Notes
 - All inline scripts/styles have been moved to external files to enable CSP.
