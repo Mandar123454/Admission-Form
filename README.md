@@ -3,8 +3,8 @@
 A polished, static admission form for 11th-grade applications. It validates input, enforces subject selection rules, and shows a thank‑you page with a submission summary.
 
 ## Screenshots
-![Admission Form UI](assets/screenshots/Screenshot 1.png)
-![Thank You + Summary](assets/screenshots/Screenshot 2.png)
+![Admission Form UI](assets/screenshots/form.png)
+![Thank You + Summary](assets/screenshots/thankyou.png)
 
 ## Features
 - Client-side validation (required fields, 10-digit phone, DOB range)

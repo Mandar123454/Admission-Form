@@ -72,6 +72,10 @@ npx serve .
 ```
 Navigate to the served URL (default http://localhost:3000 or provided port). Submit the form; observe redirect + summary.
 
+### Screenshots
+- Form UI: `assets/screenshots/form.png`
+- Thank-you + Summary: `assets/screenshots/thankyou.png`
+
 ### Deployment (GitHub Pages)
 1. Commit all files to `main` branch.
 2. In repo settings → Pages → Select branch `main` / root.
